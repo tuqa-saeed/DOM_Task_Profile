@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to your profile</h2>
+        <p id="displayUsername">Loading...</p>
+        <button id="editProfileButton">Edit Profile</button>
+
+        <div id="editProfileForm" style="display:none;">
+            <h3>Edit Profile</h3>
+            <form id="updateForm">
+                <div class="form-group">
+                    <label for="newUsername">New Username:</label>
+                    <input type="text" id="newUsername">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">New Password:</label>
+                    <input type="password" id="newPassword">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword">
+                </div>
+                <button type="submit">Update</button>
+                <button type="button" id="cancelButton">Cancel</button>
+            </form>
+        </div>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script src="profile_script.js"></script>
+</body>
+</html>

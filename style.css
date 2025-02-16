@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, lightblue,pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(90deg, lightgreen, #ff5e62);
+    color: white;
+    margin: 4px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, pink, orange);
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+}
+
+#successMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #00ff99;
+}
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .container {
+        padding: 15px;
+        width: 100%;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
